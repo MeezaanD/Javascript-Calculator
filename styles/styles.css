@@ -36,3 +36,9 @@ h1{
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
 }
+
+@media screen {max-width: 720;
+    .container {
+        width: 100%;
+    }
+}
