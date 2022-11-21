@@ -1,6 +1,13 @@
+/* Select all elements */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .container{
     text-align: center;
     margin-top: 23px;
+    padding: 100px;
 }
 
 table{
@@ -32,13 +39,12 @@ button{
     display: inline-block;
 }
 
-h1{
-    font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-@media screen {max-width: 720;
+@media screen (min-width: 300px;) {
     .container {
+        width: 100%;
+        margin: auto;
+    }
+    body {
         width: 100%;
     }
 }
