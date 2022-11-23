@@ -47,4 +47,7 @@ button{
     body {
         width: 100%;
     }
+    .calculator {
+        width: 100%;
+    }
 }
