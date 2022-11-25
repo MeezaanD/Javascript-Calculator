@@ -15,7 +15,7 @@ table{
 }
 
 body {
-    background-color: rgb(74, 73, 73);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0),rgb(148, 148, 148));
 }
 
 input{
