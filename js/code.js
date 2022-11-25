@@ -1,6 +1,7 @@
 let screen = document.getElementById('screen');
 buttons = document.querySelectorAll('button');
 let screenValue = '';
+let decimal = document.getElementById('decimal')
 for (item of buttons) {
     item.addEventListener('click', (e) => {
         buttonText = e.target.innerText;
@@ -9,6 +10,7 @@ for (item of buttons) {
             buttonText = '*';
             screenValue += buttonText;
             screen.value = screenValue;
+            
         }
         else if (buttonText == 'AC') {
             screenValue = "";
@@ -21,6 +23,10 @@ for (item of buttons) {
             screenValue += buttonText;
             screen.value = screenValue;
         }
-    })
+        // if (decimal === true) {
+        //     buttonText = '.';
+        //     decimal = false;
+        // }
+    }) 
 }
 
