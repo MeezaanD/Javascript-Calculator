@@ -32,7 +32,7 @@ equalBtn.addEventListener ('click', ()=>{
     }
 })
 
-const clearBtn = document.getElementById('clear')
+const clearBtn = document.getElementById('clear');
 clearBtn.addEventListener('click', ()=>{
     if (screen !==''){
         screen.value = "";
@@ -40,10 +40,12 @@ clearBtn.addEventListener('click', ()=>{
     }
 })
 
-
-
-
-
-
-
- 
+constDel = document.getElementById('delete');
+constDel.addEventListener('click', ()=>{
+    if (screen.value[screen.value.length -1] == '.') {
+        screen.value = screen.value.slice(0,-1);
+        allowDecimal= true;
+    } else{
+        screen.value = screen.value.slice(0,-1);
+    }
+})
